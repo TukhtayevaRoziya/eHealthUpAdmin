@@ -1,7 +1,7 @@
 import api from "../../utility/api";
 import {
   GET_CATEGORIES,
-  GET_SERVICES,
+  GET_FAQ,
   GET_COMMENTS,
   GET_CONSTRUCTIONS,
   GET_NAVIGATIONS,
@@ -62,7 +62,7 @@ export const getServices = () => async (dispatch) => {
   try {
     const res = await api.get("ourService");
     dispatch({
-      type: GET_SERVICES,
+      type: GET_FAQ,
       payload: res.data,
     });
   } catch (err) {

@@ -3,7 +3,7 @@ import { LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT } from "./types";
 
 export const login = (body) => async (dispatch) => {
   try {
-    const res = await api.post(`/auth`, body);
+    const res = await api.post(`/admin_user`, body);
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,

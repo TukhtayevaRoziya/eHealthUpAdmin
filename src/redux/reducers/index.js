@@ -6,7 +6,7 @@ import historyReducer from './historyReducer';
 import navigationReducer from './navigationReducer';
 import recentCommentReducer from './recentCommentReducer';
 import newsReducer from './newsReducer';
-import serviceReducer from './serviceReducer';
+import faqReducer from './faqReducer';
 import categoryReducer from './categoryReducer';
 import carouselReducer from './carouselReducer';
 import projectReducer from './projectReducer';
@@ -23,7 +23,7 @@ const appReducer = combineReducers({
   navigationReducer,
   recentCommentReducer,
   newsReducer,
-  serviceReducer,
+  faqReducer,
   carouselReducer,
   projectReducer,
   networkReducer,

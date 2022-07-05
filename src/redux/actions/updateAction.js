@@ -1,6 +1,6 @@
 import api from "../../utility/api";
 import { getAction } from "./readAction";
-import { GET_HISTORY, GET_NEWS, GET_SERVICES, GET_CAROUSEL, GET_PROJECT } from "./types";
+import { GET_HISTORY, GET_NEWS, UPDATE_FAQ, GET_CAROUSEL, GET_PROJECT } from "./types";
 
 export const updateAction =
   (path, actionType, id, data) => async (dispatch) => {
@@ -18,7 +18,7 @@ export const updateAction =
         dispatch(getAction("history", GET_HISTORY));
       }
       if (path === "ourService") {
-        dispatch(getAction("ourService", GET_SERVICES));
+        dispatch(getAction("faq", UPDATE_FAQ));
       }
       if (path === "carousel") {
         dispatch(getAction("carousel", GET_CAROUSEL));

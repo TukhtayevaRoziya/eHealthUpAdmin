@@ -8,7 +8,7 @@ export const CLEAR_STORE = "CLEAR_STORE";
 // read actions
 export const GET_CATEGORIES = "GET_CATEGORIES";
 export const GET_NEWS = "GET_NEWS";
-export const GET_SERVICES = "GET_SERVICES";
+export const GET_FAQ = "GET_FAQ";
 export const GET_HISTORY = "GET_HISTORY";
 export const GET_CONTACTS = "GET_CONTACTS";
 export const GET_CONSTRUCTIONS = "GET_CONSTRUCTIONS";
@@ -22,7 +22,7 @@ export const GET_USER_COMMENT = "GET_USER_COMMENT";
 
 //create actions
 export const CREATE_CATEGORY = "CREATE_CATEGORY";
-export const CREATE_SERVICE = "CREATE_SERVICE";
+export const CREATE_FAQ = "CREATE_FAQ";
 export const CREATE_COMMENT = "CREATE_COMMENT";
 export const CREATE_CONSTRUCTION = "CREATE_CONSTRUCTION";
 export const CREATE_NAVIGATION = "CREATE_NAVIGATION";
@@ -36,7 +36,7 @@ export const CREATE_USER_COMMENT = "CREATE_USER_COMMENT";
 
 // delete actions
 export const DELETE_CATEGORY = "DELETE_CATEGORY";
-export const DELETE_SERVICE = "DELETE_SERVICE";
+export const DELETE_FAQ = "DELETE_FAQ";
 export const DELETE_COMMENT = "DELETE_COMMENT";
 export const DELETE_CONSTRUCTION = "DELETE_CONSTRUCTION";
 export const DELETE_NAVIGATION = "DELETE_NAVIGATION";
@@ -50,7 +50,7 @@ export const DELETE_USER_COMMENT = "DELETE_USER_COMMENT";
 
 // update actions
 export const UPDATE_CATEGORY = "UPDATE_CATEGORY";
-export const UPDATE_SERVICE = "UPDATE_SERVICE";
+export const UPDATE_FAQ = "UPDATE_FAQ";
 export const UPDATE_COMMENT = "UPDATE_COMMENT";
 export const UPDATE_CONSTRUCTION = "UPDATE_CONSTRUCTION";
 export const UPDATE_NAVIGATION = "UPDATE_NAVIGATION";

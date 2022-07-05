@@ -14,12 +14,11 @@ import { Contact } from "../contact/Contact";
 import { History } from "./../history/History";
 import { Navigation } from "./../navigation/Navigation";
 import { News } from "../news/News";
-import { OurSevice } from "./../ourSevice/OurSevice";
 import { Carousel } from "./../carousel/Carousel";
-import { Project } from "./../project/Project";
-// import { Network } from './../network/Network';
 import { NetworkUrl } from "./../networkUrl/NetworkUrl";
 import { UserComment } from "./../userComment/UserComment";
+
+import { FAQ } from './../faq/FAQ';
 
 const { Header, Sider } = Layout;
 function LogOut(params) {
@@ -68,63 +67,60 @@ export class Sidebar extends React.Component {
           <div className="logo">
             {!collapsed ? (
               <>
-                <AdminPanelSettingsIcon /> Build Admin
+                <AdminPanelSettingsIcon /> E-Health Admin
               </>
             ) : (
               <AdminPanelSettingsIcon />
             )}
           </div>
-          <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-            <Menu.Item key="1" icon={<ContactsOutlined />}>
-              <NavLink to={"contact"}>Bog'lanish</NavLink>
-            </Menu.Item>
-            <Menu.Item key="2" icon={<HistoryIcon />}>
-              <NavLink to={"history "}>Tarix</NavLink>
-            </Menu.Item>
-            <Menu.Item key="3" icon={<NewspaperIcon />}>
-              <NavLink to={"news"}>Yangiliklar</NavLink>
-            </Menu.Item>
-            <Menu.Item key="4" icon={<CleaningServicesIcon />}>
-              <NavLink to={"ourService"}>Xizmatlar</NavLink>
-            </Menu.Item>
-            <Menu.Item key="5" icon={<CommentOutlined />}>
-              <NavLink to={"carousel"}>Carousel</NavLink>
-            </Menu.Item>
-            <Menu.Item key="6" icon={<CommentOutlined />}>
-              <NavLink to={"project"}>Project</NavLink>
-            </Menu.Item>
-            {/* <Menu.Item key="7" icon={<CommentOutlined />}>
-              <NavLink to={"socialNetwork"}>Ijtiomiy tarmoqlar</NavLink>
-            </Menu.Item> */}
-            <Menu.Item key="7" icon={<CommentOutlined />}>
-              <NavLink to={"socialNetworkUrl"}>Ijtiomiy tarmoq Urllari</NavLink>
-            </Menu.Item>
-            <Menu.Item key="8" icon={<CommentOutlined />}>
-              <NavLink to={"userComment"}>Foydalanuvchi Izohi</NavLink>
-            </Menu.Item>
-            {/* <SubMenu key="sub1" icon={<UserOutlined />} title="Qurilish">
-              <Menu.Item key="3">
+          {/* <Menu.SubMenu key="sub1" icon={<UserOutlined />} title="Qurilish">
+              <Menu.Item key="1">
                 <NavLink to={"about"}>Sarlavha</NavLink>
               </Menu.Item>
-              <Menu.Item key="4">Asosiy</Menu.Item>
-            </SubMenu> */}
+              <Menu.Item key="2">Asosiy</Menu.Item>
+            </Menu.SubMenu> */}
+              {/* <Menu.SubMenu title="sub menu" prefixCls={null}>
+    <Menu.Item>item 3</Menu.Item>
+  </Menu.SubMenu> */}
+          <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
+            <Menu.Item key="3" icon={<ContactsOutlined />}>
+              <NavLink to={"contact"}>Bog'lanish</NavLink>
+            </Menu.Item>
+            <Menu.Item key="4" icon={<HistoryIcon />}>
+              <NavLink to={"history "}>Tarix</NavLink>
+            </Menu.Item>
+            <Menu.Item key="5" icon={<NewspaperIcon />}>
+              <NavLink to={"news"}>Yangiliklar</NavLink>
+            </Menu.Item>
+            <Menu.Item key="6" icon={<CleaningServicesIcon />}>
+              <NavLink to={"ourService"}>Xizmatlar</NavLink>
+            </Menu.Item>
+            <Menu.Item key="7" icon={<CommentOutlined />}>
+              <NavLink to={"carousel"}>Carousel</NavLink>
+            </Menu.Item>
+            <Menu.Item key="8" icon={<CommentOutlined />}>
+              <NavLink to={"faq"}>FAQ</NavLink>
+            </Menu.Item>
+            <Menu.Item key="9" icon={<CommentOutlined />}>
+              <NavLink to={"socialNetworkUrl"}>Ijtiomiy tarmoq Urllari</NavLink>
+            </Menu.Item>
+            <Menu.Item key="10" icon={<CommentOutlined />}>
+              <NavLink to={"faqrwe"}>FAQ</NavLink>
+            </Menu.Item>
+          
           </Menu>
         </Sider>
         <Layout className="site-layout">
           <LogOut />
           <Routes>
             <Route index element={<Contact />} />
-            {/* <Route path="category" element={<Category />} />
-            <Route path="construction" element={<Construction />} /> */}
             <Route path="contact" element={<Contact />} />
             <Route path="history" element={<History />} />
             <Route path="navigation" element={<Navigation />} />
             <Route path="news" element={<News />} />
-            <Route path="ourService" element={<OurSevice />} />
-            {/* <Route path="recentComment" element={<RecentComment />} /> */}
+            {/* <Route path="faqdfgdg" element={<FAQ />} /> */}
             <Route path="carousel" element={<Carousel />} />
-            <Route path="project" element={<Project />} />
-            {/* <Route path="socialNetwork" element={<Network />} /> */}
+            <Route path="faq" element={<FAQ />} />
             <Route path="socialNetworkUrl" element={<NetworkUrl />} />
             <Route path="userComment" element={<UserComment />} />
             <Route
